@@ -93,7 +93,6 @@ async function run() {
       res.json(results);
     });
 
-    // service to do
     app.get("/todoservice", async (req, res) => {
       let email = req.query.email;
 
