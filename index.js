@@ -135,6 +135,7 @@ async function run() {
       const result = await services.deleteOne(query);
       res.json(result);
     });
+
     app.delete("/deleteBookedService/:id", async (req, res) => {
       try {
         const id = req.params.id;
