@@ -133,6 +133,7 @@ async function run() {
       console.log(id);
       const query = { _id: new ObjectId(id) };
       const result = await services.deleteOne(query);
+
       res.json(result);
     });
 
