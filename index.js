@@ -104,6 +104,7 @@ async function run() {
         const bookedServiceId = bookedService.serviceID.toString();
         return servicesArray.some((service) => {
           const servicesId = service._id.toString();
+
           return bookedServiceId === servicesId;
         });
       });
